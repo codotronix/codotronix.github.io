@@ -1,0 +1,137 @@
+#container
+{
+	position: relative;
+	background: #000;
+	top:0;
+	left:0;
+}
+#canvasBlack
+{
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: -webkit-linear-gradient(left top, black , rgb(34, 24, 116), black); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, black , rgb(34, 24, 116), black); /* Standard syntax */
+}
+
+#disc
+{
+	height: 400px;
+	width: 400px;
+	border-radius: 200px;
+	/*background: rgba(22, 22, 34, 0.6);*/
+	/*background: #FFF;*/
+	z-index: 1;
+	position: absolute;
+}
+
+#center-disc.center-disc-bg1
+{
+	background: url("SumanBarick.jpg") no-repeat 0 0;
+}
+
+#center-disc.center-disc-bg2
+{
+	background: url("SumanBarick2.jpg") no-repeat 0 0;
+}
+
+.cell-menu
+{
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+	box-sizing: border-box;
+	color: #FFF;
+	background: rgb(137, 0, 5);
+	/*background: url("planet.png") no-repeat 0 0;*/
+	text-align: center;
+	padding: 45px 0;
+	font-size: 20px;
+	background: -webkit-linear-gradient(red, transparent, red); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(red, transparent, red); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(red, transparent, red); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(red, transparent, red); /* Standard syntax */
+  	-webkit-animation: rotationAC 80s infinite; /* Chrome, Safari, Opera */
+    animation: rotationAC 80s infinite;
+    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+    text-decoration: none;
+}
+
+a.cell-menu:visited
+{
+	color: #FFF;
+}
+
+.rotating
+{
+	-webkit-animation: rotation 80s infinite; /* Chrome, Safari, Opera */
+    animation: rotation 80s infinite;
+    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotation {
+    0%   {-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    10%  {-ms-transform: rotate(36deg); -webkit-transform: rotate(36deg); transform: rotate(36deg);}
+    20%  {-ms-transform: rotate(72deg); -webkit-transform: rotate(72deg); transform: rotate(72deg);}
+    30%  {-ms-transform: rotate(108deg); -webkit-transform: rotate(108deg); transform: rotate(108deg);}
+    40%  {-ms-transform: rotate(144deg); -webkit-transform: rotate(144deg); transform: rotate(144deg);}
+    50%  {-ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+    60%  {-ms-transform: rotate(216deg); -webkit-transform: rotate(216deg); transform: rotate(216deg);}
+    70%  {-ms-transform: rotate(252deg); -webkit-transform: rotate(252deg); transform: rotate(252deg);}
+    80%  {-ms-transform: rotate(288deg); -webkit-transform: rotate(288deg); transform: rotate(288deg);}
+    90%  {-ms-transform: rotate(324deg); -webkit-transform: rotate(324deg); transform: rotate(324deg);}    
+    100% {-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes rotation {
+    0%   {-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    10%  {-ms-transform: rotate(36deg); -webkit-transform: rotate(36deg); transform: rotate(36deg);}
+    20%  {-ms-transform: rotate(72deg); -webkit-transform: rotate(72deg); transform: rotate(72deg);}
+    30%  {-ms-transform: rotate(108deg); -webkit-transform: rotate(108deg); transform: rotate(108deg);}
+    40%  {-ms-transform: rotate(144deg); -webkit-transform: rotate(144deg); transform: rotate(144deg);}
+    50%  {-ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+    60%  {-ms-transform: rotate(216deg); -webkit-transform: rotate(216deg); transform: rotate(216deg);}
+    70%  {-ms-transform: rotate(252deg); -webkit-transform: rotate(252deg); transform: rotate(252deg);}
+    80%  {-ms-transform: rotate(288deg); -webkit-transform: rotate(288deg); transform: rotate(288deg);}
+    90%  {-ms-transform: rotate(324deg); -webkit-transform: rotate(324deg); transform: rotate(324deg);}    
+    100% {-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotationAC {
+    0%   {-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    10%  {-ms-transform: rotate(-36deg); -webkit-transform: rotate(-36deg); transform: rotate(-36deg);}
+    20%  {-ms-transform: rotate(-72deg); -webkit-transform: rotate(-72deg); transform: rotate(-72deg);}
+    30%  {-ms-transform: rotate(-108deg); -webkit-transform: rotate(-108deg); transform: rotate(-108deg);}
+    40%  {-ms-transform: rotate(-144deg); -webkit-transform: rotate(-144deg); transform: rotate(-144deg);}
+    50%  {-ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg);}
+    60%  {-ms-transform: rotate(-216deg); -webkit-transform: rotate(-216deg); transform: rotate(-216deg);}
+    70%  {-ms-transform: rotate(-252deg); -webkit-transform: rotate(-252deg); transform: rotate(-252deg);}
+    80%  {-ms-transform: rotate(-288deg); -webkit-transform: rotate(-288deg); transform: rotate(-288deg);}
+    90%  {-ms-transform: rotate(-324deg); -webkit-transform: rotate(-324deg); transform: rotate(-324deg);}    
+    100% {-ms-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); transform: rotate(-360deg);}
+}
+
+/* Standard syntax */
+@keyframes rotationAC {
+    0%   {-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    10%  {-ms-transform: rotate(36deg); -webkit-transform: rotate(36deg); transform: rotate(36deg);}
+    20%  {-ms-transform: rotate(72deg); -webkit-transform: rotate(72deg); transform: rotate(72deg);}
+    30%  {-ms-transform: rotate(108deg); -webkit-transform: rotate(108deg); transform: rotate(108deg);}
+    40%  {-ms-transform: rotate(144deg); -webkit-transform: rotate(144deg); transform: rotate(144deg);}
+    50%  {-ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+    60%  {-ms-transform: rotate(216deg); -webkit-transform: rotate(216deg); transform: rotate(216deg);}
+    70%  {-ms-transform: rotate(252deg); -webkit-transform: rotate(252deg); transform: rotate(252deg);}
+    80%  {-ms-transform: rotate(288deg); -webkit-transform: rotate(288deg); transform: rotate(288deg);}
+    90%  {-ms-transform: rotate(324deg); -webkit-transform: rotate(324deg); transform: rotate(324deg);}    
+    100% {-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
