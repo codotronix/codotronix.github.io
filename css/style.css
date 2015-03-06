@@ -124,14 +124,14 @@ a.cell-menu:visited
 /* Standard syntax */
 @keyframes rotationAC {
     0%   {-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
-    10%  {-ms-transform: rotate(36deg); -webkit-transform: rotate(36deg); transform: rotate(36deg);}
-    20%  {-ms-transform: rotate(72deg); -webkit-transform: rotate(72deg); transform: rotate(72deg);}
-    30%  {-ms-transform: rotate(108deg); -webkit-transform: rotate(108deg); transform: rotate(108deg);}
-    40%  {-ms-transform: rotate(144deg); -webkit-transform: rotate(144deg); transform: rotate(144deg);}
-    50%  {-ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
-    60%  {-ms-transform: rotate(216deg); -webkit-transform: rotate(216deg); transform: rotate(216deg);}
-    70%  {-ms-transform: rotate(252deg); -webkit-transform: rotate(252deg); transform: rotate(252deg);}
-    80%  {-ms-transform: rotate(288deg); -webkit-transform: rotate(288deg); transform: rotate(288deg);}
-    90%  {-ms-transform: rotate(324deg); -webkit-transform: rotate(324deg); transform: rotate(324deg);}    
-    100% {-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+    10%  {-ms-transform: rotate(-36deg); -webkit-transform: rotate(-36deg); transform: rotate(-36deg);}
+    20%  {-ms-transform: rotate(-72deg); -webkit-transform: rotate(-72deg); transform: rotate(-72deg);}
+    30%  {-ms-transform: rotate(-108deg); -webkit-transform: rotate(-108deg); transform: rotate(-108deg);}
+    40%  {-ms-transform: rotate(-144deg); -webkit-transform: rotate(-144deg); transform: rotate(-144deg);}
+    50%  {-ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg);}
+    60%  {-ms-transform: rotate(-216deg); -webkit-transform: rotate(-216deg); transform: rotate(-216deg);}
+    70%  {-ms-transform: rotate(-252deg); -webkit-transform: rotate(-252deg); transform: rotate(-252deg);}
+    80%  {-ms-transform: rotate(-288deg); -webkit-transform: rotate(-288deg); transform: rotate(-288deg);}
+    90%  {-ms-transform: rotate(-324deg); -webkit-transform: rotate(-324deg); transform: rotate(-324deg);}    
+    100% {-ms-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); transform: rotate(-360deg);}
 }
