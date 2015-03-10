@@ -23,7 +23,7 @@ body
 	left:0;
 	/*display:none;*/
 }
-#canvasBlack
+#canvasStraightStars
 {
 	background: #000;
 	position: fixed;
@@ -31,31 +31,38 @@ body
 	width: 100%;
 	/*top: 0;
 	left: 0;*/
-	background: -webkit-linear-gradient(left top, black , rgb(34, 24, 116), black); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, black , rgb(34, 24, 116), black); /* Standard syntax */
+	/*background: -webkit-linear-gradient(left top, black , rgb(34, 24, 116), black); /* For Safari 5.1 to 6.0 */
+  	/*background: -o-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Opera 11.1 to 12.0 */
+  	/*background: -moz-linear-gradient(bottom right, black, rgb(34, 24, 116), black); /* For Firefox 3.6 to 15 */
+  	/*background: linear-gradient(to bottom right, black , rgb(34, 24, 116), black); /* Standard syntax */
 }
+
+#canvasDiagonalStars
+{
+    background: transparent;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
 
 #disc
 {
 	height: 400px;
 	width: 400px;
 	border-radius: 200px;
-	/*background: rgba(22, 22, 34, 0.6);*/
-	/*background: #FFF;*/
 	z-index: 1;
 	position: absolute;
 }
 
 #center-disc.center-disc-bg1
 {
-	background: url("SumanBarick.jpg") no-repeat 0 0;
+	background: url("../images/SumanBarick.jpg") no-repeat 0 0;
 }
 
 #center-disc.center-disc-bg2
 {
-	background: url("SumanBarick2.jpg") no-repeat 0 0;
+	background: url("../images/SumanBarick2.jpg") no-repeat 0 0;
 }
 
 .cell-menu
