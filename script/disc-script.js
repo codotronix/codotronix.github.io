@@ -36,6 +36,10 @@ $(function () {
 	manageCircularDisc();
 	//toggle the image once to stop delayed loading of backgroung image of center disc
 	$('#center-disc').toggleClass('center-disc-bg2');
+	
+	//hide the loading text and show the container
+	$('#loadingText').hide();
+	$('#container').show();
 
 	$(window).resize(function () {
 		manageCircularDisc();
