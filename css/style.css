@@ -1,14 +1,14 @@
 #loadingText
 {
 	color: #FFF;
-	font-size: 24px;
+	font-size: 30px;
 	position: absolute;
 	z-index: 2;
 	height:100%;
 	width: 100%;
 	background: #221874;
 	padding: 25px;
-	opacity: .7;
+	/*opacity: .7;*/
 	/*text-align: center;*/
 }
 #container
