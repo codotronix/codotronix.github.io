@@ -34,6 +34,8 @@ $(function () {
 	}
 
 	manageCircularDisc();
+	//toggle the image once to stop delayed loading of backgroung image of center disc
+	$('#center-disc').toggleClass('center-disc-bg2');
 
 	$(window).resize(function () {
 		manageCircularDisc();
