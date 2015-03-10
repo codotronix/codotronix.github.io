@@ -1,28 +1,20 @@
 $(function () {
 	"use strict"
-	//console.log('ready');
 	//this is our array of stars
 	var stars = [];
 	var winHeight = $(window).height();
 	var winWidth = $(window).width();
 	var noOfStar = 2000;
-	$('#canvasBlack')[0].width = winWidth;
-	$('#canvasBlack')[0].height = winHeight;
-	/*$('#canvasBlack').css({
-		'width': winWidth,
-		'height': winHeight,
-		'background': '#000'
-	});*/
-	var ctx = $('#canvasBlack')[0].getContext('2d');
+	$('#canvasStraightStars')[0].width = winWidth;
+	$('#canvasStraightStars')[0].height = winHeight;
+	var ctx = $('#canvasStraightStars')[0].getContext('2d');
 	ctx.fillStyle = "#FFF";
 
 	//lets create noOfStar stars
 	for(var i=0; i<noOfStar; i++) {
 		stars[i] = {};
 		stars[i].x = Math.floor(Math.random() * winWidth);
-		//stars[i].x = winWidth/2 - 100 + Math.floor(Math.random() * 200);
 		stars[i].y = Math.floor(Math.random() * winHeight);
-		//stars[i].y = winHeight/2 - 100 + Math.floor(Math.random() * 200);
 		stars[i].size = Math.random() + .3;
 		stars[i].speed = Math.random() * 2;
 		stars[i].direction = Math.floor(Math.random() * 2) + 1; // 1=X axis, 2=Y axis
@@ -69,16 +61,12 @@ $(function () {
 
 
 			//check out of boundary conditions
-			if (stars[i].x > winWidth || stars[i].x < 0) { 
-				//stars[i].x = winWidth/2 - 200 + Math.floor(Math.random() * 400);
-				//stars[i].y = winHeight/2 - 200 + Math.floor(Math.random() * 400);	
+			if (stars[i].x > winWidth || stars[i].x < 0) {
 				stars[i].x = Math.floor(Math.random() * winWidth);
 				stars[i].y = Math.floor(Math.random() * winHeight);				
 			}
 
-			if (stars[i].y > winHeight || stars[i].y < 0) { 
-				//stars[i].x = winWidth/2 - 200 + Math.floor(Math.random() * 400);
-				//stars[i].y = winHeight/2 - 200 + Math.floor(Math.random() * 400);
+			if (stars[i].y > winHeight || stars[i].y < 0) {
 				stars[i].x = Math.floor(Math.random() * winWidth);
 				stars[i].y = Math.floor(Math.random() * winHeight);
 			}
@@ -103,7 +91,7 @@ $(function () {
 		clearCanvas();
 		drawStars();
 		moveStars();
-		window.setTimeout(wakeTheSky, 100);
+		window.setTimeout(wakeTheSky, 17);
 	}
 
 	wakeTheSky();
