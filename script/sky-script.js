@@ -91,7 +91,7 @@ $(function () {
 		clearCanvas();
 		drawStars();
 		moveStars();
-		window.setTimeout(wakeTheSky, 17);
+		window.setTimeout(wakeTheSky, 100);
 	}
 
 	wakeTheSky();
