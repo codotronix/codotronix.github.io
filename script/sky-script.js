@@ -95,5 +95,74 @@ $(function () {
 	}
 
 	wakeTheSky();
-
+	animateSpiralSky();
 });
+
+//this function is responsible for everything related to the spiral
+function animateSpiralSky () {
+	console.log('success');
+	
+	"use strict"
+	//console.log('Hi');
+	var winHeight = $(window).height();
+	var winWidth = $(window).width();
+	var cx = winWidth/2 - 9;
+	var cy = winHeight/2;
+	var r = 0;
+	var degree = 0;
+	var px = cx;		// + r * Math.cos(degree * Math.PI/180)
+	var py = cy; 		// + r * Math.sin(degree * Math.PI/180)
+	var randRed = 0;
+	var randGreen = 0;
+	var randBlue = 0;
+	var colors = ['blue','blueviolet','aqua','red','brown','orange','chocolate','coral','crimson','cyan','darkblue','darkgoldenrod','darkslateblue','deepskyblue','dodgerblue','firebrick','indianred','indigo','maroon','mediumblue','orangered','navy','steelblue','slateblue']
+	var colorIndex = 0;
+
+	var animateFunc = window.requestAnimationFrame || window.setTimeout;
+
+	$('#canvasSpiral')[0].width = winWidth;
+	$('#canvasSpiral')[0].height = winHeight;
+	
+	var ctx = $('#canvasSpiral')[0].getContext('2d');
+
+	//give a random color to the brush
+	
+	ctx.fillStyle = "RGB("+randRed+","+randGreen+","+randBlue+")";
+
+	function randBrushColor () {
+		//give a random color to the brush
+		colorIndex = Math.floor(Math.random() * colors.length);
+		console.log(colorIndex);
+		ctx.fillStyle = colors[colorIndex];
+	}
+	randBrushColor();
+
+	var i = -1;
+	r=40;
+	function spiralIt () {
+		i++;
+		ctx.fillRect(px, py, 4, 4);
+		if(i%9 == 0) {
+			r++;
+		}		
+		degree++;
+		px = cx + r * Math.cos(degree * Math.PI/180);
+		py = cy + r * Math.sin(degree * Math.PI/180);
+
+		//if boundary is touched, reset everything...
+		if (px<0 || py<0 || px>winWidth || py>winHeight) {
+			//cx += 10;
+			r = 40;
+			degree = 0;	
+			randBrushColor();			
+		}
+		window.requestAnimationFrame(spiralIt);
+	}
+
+	spiralIt();
+
+	$('#center-disc').click(function () {
+		randBrushColor();
+	})
+
+}
