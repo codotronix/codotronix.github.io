@@ -82,8 +82,8 @@ body
   	background: -o-linear-gradient(red, transparent, red); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(red, transparent, red); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(red, transparent, red); /* Standard syntax */
-  	-webkit-animation: rotationAC 80s infinite; /* Chrome, Safari, Opera */
-    animation: rotationAC 80s infinite;
+  	-webkit-animation: rotationAC 60s infinite; /* Chrome, Safari, Opera */
+    animation: rotationAC 60s infinite;
     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
     animation-timing-function: linear;
     text-decoration: none;
@@ -96,8 +96,8 @@ a.cell-menu:visited
 
 .rotating
 {
-	-webkit-animation: rotation 80s infinite; /* Chrome, Safari, Opera */
-    animation: rotation 80s infinite;
+	-webkit-animation: rotation 60s infinite; /* Chrome, Safari, Opera */
+    animation: rotation 60s infinite;
     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
     animation-timing-function: linear;
 }
