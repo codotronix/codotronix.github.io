@@ -21,7 +21,8 @@ function animateSpiralSky () {
 	var randRed = 0;
 	var randGreen = 0;
 	var randBlue = 0;
-	var colors = ['blue','blueviolet','aqua','red','brown','orange','chocolate','coral','crimson','cyan','darkblue','darkgoldenrod','darkslateblue','deepskyblue','dodgerblue','firebrick','indianred','indigo','maroon','mediumblue','orangered','navy','steelblue','slateblue']
+	//var colors = ['blue','blueviolet','aqua','red','brown','orange','chocolate','coral','crimson','cyan','darkblue','darkgoldenrod','darkslateblue','deepskyblue','dodgerblue','firebrick','indianred','indigo','maroon','mediumblue','orangered','navy','steelblue','slateblue']
+	var colors = ['blue','red'];
 	var colorIndex = 0;
 
 	var animateFunc = window.requestAnimationFrame || window.setTimeout;
@@ -37,9 +38,11 @@ function animateSpiralSky () {
 
 	function randBrushColor () {
 		//give a random color to the brush
-		colorIndex = Math.floor(Math.random() * colors.length);
-		console.log(colorIndex);
+		//colorIndex = Math.floor(Math.random() * colors.length);
+		//console.log(colorIndex);
 		ctx.fillStyle = colors[colorIndex];
+		colorIndex++;
+		if (colorIndex > 1) {colorIndex=0;}
 	}
 	randBrushColor();
 
