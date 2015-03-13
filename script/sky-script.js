@@ -55,8 +55,8 @@ function animateSpiralSky () {
 			r++;
 		}		
 		degree++;
-		px = cx + r * Math.cos(degree * Math.PI/180);
-		py = cy + (r+r/2) * Math.sin(degree * Math.PI/180);
+		px = cx + 2 * r * Math.cos(degree * Math.PI/180);
+		py = cy + r * Math.sin(degree * Math.PI/180);
 
 		//if boundary is touched, reset everything...
 		if (px<0 || py<0 || px>winWidth || py>winHeight) {
