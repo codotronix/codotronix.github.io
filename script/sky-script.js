@@ -47,7 +47,8 @@ function animateSpiralSky () {
 	randBrushColor();
 
 	var i = -1;
-	r=40;
+	var smallR = 28;
+	r=smallR;
 	function spiralIt () {
 		i++;
 		ctx.fillRect(px, py, 4, 4);
@@ -61,7 +62,7 @@ function animateSpiralSky () {
 		//if boundary is touched, reset everything...
 		if (px<0 || py<0 || px>winWidth || py>winHeight) {
 			//cx += 10;
-			r = 40;
+			r = smallR;
 			degree = 0;	
 			randBrushColor();			
 		}
