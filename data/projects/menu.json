@@ -1,0 +1,44 @@
+{
+	"projects": [
+		{
+			"name"		: "Asteroid Attack",
+			"desc"		: "Browser based space shooter game",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/asteroidAttackDesc.json",
+			"imgUrl"	: "images/projectThumbnails/asteroidAttack.png"
+		},
+		{
+			"name"		: "Mini Puzzle",
+			"desc"		: "Browser based puzzle game with various customization options",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/miniPuzzleDesc.json",
+			"imgUrl"	: "images/projectThumbnails/miniPuzzle.png"			
+		},
+		{
+			"name": "ONE Mall",
+			"desc": "Online shopping mall",
+			"category"	: "Website",
+			"techUsed"	: "HTML, CSS, jQuery, AngularJS",
+			"url"		: "projects/oneMallDesc.json",
+			"imgUrl"	: "images/projectThumbnails/oneMall.png"
+		},
+		{
+			"name"		: "Brick Breaker",
+			"desc"		: "Simple brick breaker game that runs in any browser",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/brickBreakerDesc.json",
+			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
+		},		
+		{
+			"name"		: "My Galaxy",
+			"desc"		: "I, hereby, placing myself at the center of the galaxy",
+			"category"	: "Website",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/myGalaxyDesc.json",
+			"imgUrl"	: "images/projectThumbnails/galaxy.png"
+		}
+	]
+}
