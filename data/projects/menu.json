@@ -5,7 +5,7 @@
 			"desc"		: "Browser based space shooter game",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/asteroidAttackDesc.json",
+			"url"		: "http://barick.in/Asteroid-Attack/play.html",
 			"imgUrl"	: "images/projectThumbnails/asteroidAttack.png"
 		},
 		{
@@ -13,7 +13,7 @@
 			"desc"		: "Browser based puzzle game with various customization options",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/miniPuzzleDesc.json",
+			"url"		: "http://barick.in/mini-puzzle/puzzle.html",
 			"imgUrl"	: "images/projectThumbnails/miniPuzzle.png"			
 		},
 		{
@@ -21,7 +21,7 @@
 			"desc": "Online shopping mall",
 			"category"	: "Website",
 			"techUsed"	: "HTML, CSS, jQuery, AngularJS",
-			"url"		: "projects/oneMallDesc.json",
+			"url"		: "http://one.barick.in",
 			"imgUrl"	: "images/projectThumbnails/oneMall.png"
 		},
 		{
@@ -29,7 +29,7 @@
 			"desc"		: "Simple brick breaker game that runs in any browser",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/brickBreakerDesc.json",
+			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
 			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
 		},		
 		{
@@ -37,7 +37,7 @@
 			"desc"		: "I, hereby, placing myself at the center of the galaxy",
 			"category"	: "Website",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/myGalaxyDesc.json",
+			"url"		: "http://barick.in/galaxy",
 			"imgUrl"	: "images/projectThumbnails/galaxy.png"
 		}
 	]
