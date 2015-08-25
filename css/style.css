@@ -29,6 +29,11 @@ body {
     border-color: rgb(36, 131, 255);
 }
 
+.mainMenu li,
+.mainMenu li a {
+    background-color: rgba(73, 47, 239, 0.58);	
+}
+
 .bodyContainer {
 	min-height: 480px;
 }
