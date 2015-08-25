@@ -30,7 +30,8 @@ body {
 }
 
 .mainMenu li,
-.mainMenu li a {
+.mainMenu li a,
+.navbar-default .navbar-nav>.active>a {
     background-color: rgba(73, 47, 239, 0.58);	
 }
 
