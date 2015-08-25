@@ -55,6 +55,14 @@
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
 			"imgUrl"	: "http://4.bp.blogspot.com/-vpfDkO1z33o/Vdw6QmpJHzI/AAAAAAAAAVw/vqMzaciI8-E/s1600/brickBreaker.png"
-		}		
+		},
+		{
+			"name"		: "Crazy Tank",
+			"desc"		: "Demo game to show moving DOM objects with keyboard",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "http://barick.in/crazyTank/",
+			"imgUrl"	: "http://2.bp.blogspot.com/-8U-2SqVvpJ8/Vdyj5b5cmsI/AAAAAAAAAXQ/cxrzk2md9jI/s1600/crazyTank.png"
+		}
 	]
 }
