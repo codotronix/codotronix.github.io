@@ -189,6 +189,11 @@ $(function(){
          "background-position-y": bgY + 'px'
       }, 999);
    });
+   
+   $('body').on('click', '.mainMenu li', function(){
+   	$('.mainMenu li').removeCLass('active');
+   	$(this).addClass('active');
+   } );
 })
 
 
