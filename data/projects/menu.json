@@ -58,7 +58,7 @@
 		},
 		{
 			"name"		: "Crazy Tank",
-			"desc"		: "Demo game to show moving DOM objects with keyboard",
+			"desc"		: "Demo game to demonstrate DOM objects movement with keyboard",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/crazyTank/",
