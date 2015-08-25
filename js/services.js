@@ -26,10 +26,12 @@ mainApp.service('sharedVars', ['$rootScope', function ($rootScope) {
 mainApp.service('jqUtils', function () {
    var jqUtils = {};
    
-   this.activateMainMenu = function() {
+   jqUtils.activateMainMenu = function() {
       $('body').on('click', '.mainMenu li', function(){
          $('.mainMenu li').removeClass('active');
          $(this).addClass('active');
       });
    };
+   
+   return jqUtils;
 });
