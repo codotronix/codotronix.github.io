@@ -3,6 +3,9 @@
    Job: This service will help to share common variables between
    controllers via $rootScope
  *******************************************************************/
+//get a reference of the mainApp
+var mainApp = angular.module('mainApp');
+
 mainApp.service('sharedVars', ['$rootScope', function ($rootScope) {
    var sharedVars = {};
    sharedVars.classPageId = 'homePage';
@@ -19,3 +22,14 @@ mainApp.service('sharedVars', ['$rootScope', function ($rootScope) {
  
    return sharedVars;
 }]);
+
+mainApp.service('jqUtils', function () {
+   var jqUtils = {};
+   
+   this.activateMainMenu = function() {
+      $('body').on('click', '.mainMenu li', function(){
+         $('.mainMenu li').removeClass('active');
+         $(this).addClass('active');
+      });
+   };
+});
