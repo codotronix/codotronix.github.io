@@ -124,8 +124,9 @@ mainApp.controller('peopleCtrl', ['$scope', 'sharedVars', function ($scope, shar
 }]);
 
 /********************* Projects Controller ***************************/
-mainApp.controller('projectsCtrl', ['$scope', 'sharedVars', '$http', '$location', function ($scope, sharedVars, $http, $location) {
-	$http.get('data/projects/menu.json').then(function (res) {
+mainApp.controller('projectsCtrl', ['$scope', 'sharedVars', '$http', '$location', 'jqUtils', function ($scope, sharedVars, $http, $location, jqUtils) {
+   jqUtils.activateMainMenu();
+   $http.get('data/projects/menu.json').then(function (res) {
       //console.log(data);
       $scope.projects = res.data.projects;
    });
