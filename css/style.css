@@ -34,7 +34,8 @@ body {
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
-    background-color: rgba(73, 47, 239, 0.58);	
+    background-color: rgba(73, 47, 239, 0.58);
+    color: #FFF;
 }
 
 .bodyContainer {
