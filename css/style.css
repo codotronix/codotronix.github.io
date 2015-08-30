@@ -4,6 +4,10 @@
 	font-size: 15px;
 }
 
+select option {
+	color: #000;
+}
+
 a {
 	text-decoration: none !important;
 }
@@ -76,21 +80,6 @@ body {
     -moz-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
     box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
 }
-
-/*
-.projectOuterContainer .projectName {
-	margin: 0;
-	padding: 5px 10px;
-	font-size: 18px;
-	background: rgba(0, 3, 255, 0.5);
-	border-bottom: 2px outset rgb(0, 3, 255);
-}
-
-.projectOuterContainer .projectDesc {
-	padding: 10px;
-	background: rgba(0, 0, 0, 0.75);
-}
-*/
 
 footer {
 	text-align: center;
@@ -223,6 +212,14 @@ footer {
 
 .projectsListContainer .projectDesc div {
 	margin-bottom: 5px;
+}
+
+.padding0 {
+	padding: 0;
+}
+
+.marginBtm15 {
+	margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
