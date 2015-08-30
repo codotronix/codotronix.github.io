@@ -4,10 +4,6 @@
 	font-size: 15px;
 }
 
-select option {
-	color: #000;
-}
-
 a {
 	text-decoration: none !important;
 }
@@ -31,6 +27,15 @@ body {
 
 .navbar-default {
     border-color: rgb(36, 131, 255);
+}
+
+.mainMenu li,
+.mainMenu li a,
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(73, 47, 239, 0.58);
+    color: #FFF;
 }
 
 .bodyContainer {
@@ -218,14 +223,6 @@ footer {
 
 .projectsListContainer .projectDesc div {
 	margin-bottom: 5px;
-}
-
-.padding0 {
-	padding: 0;
-}
-
-.marginBtm15 {
-	margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
