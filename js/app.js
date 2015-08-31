@@ -3,7 +3,7 @@ var mainApp = angular.module('mainApp', ['ngRoute']);
 
 /****** The Main Controller *****/
 mainApp.controller('mainCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
-	   
+      
       $scope.classPageId = "loginPage";
       $scope.$on('pageChange', function () {
          $scope.classPageId = sharedVars.classPageId;
@@ -63,7 +63,7 @@ mainApp.controller('homeCtrl', ['$scope', 'sharedVars', function ($scope, shared
 }]);
 
 mainApp.controller('aboutCtrl', ['$scope', 'sharedVars', '$timeout', function ($scope, sharedVars, $timeout) {
-	var startDate = new Date((new Date("11 October, 2011")).toUTCString());
+   var startDate = new Date((new Date("11 October, 2011")).toUTCString());
    //var endDate = new Date().toUTCString();
 
    function calculateExp () {
@@ -119,7 +119,7 @@ mainApp.controller('aboutCtrl', ['$scope', 'sharedVars', '$timeout', function ($
 mainApp.controller('peopleCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
    //$('body').removeClass().addClass('generalPage');
    sharedVars.changePageID('people');
-	$scope.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10', 'Item 11', 'Item 12'];
+   $scope.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10', 'Item 11', 'Item 12'];
    
 }]);
 
@@ -152,7 +152,7 @@ mainApp.controller('projectPageCtrl', ['$scope', 'sharedVars', '$http', '$routeP
    });
 }]);
 
-
+/*
 $(function(){
    var oldMousePos = {};
    oldMousePos.x = 0;
@@ -191,6 +191,4 @@ $(function(){
       }, 999);
    });
 })
-
-
-
+*/
