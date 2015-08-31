@@ -38,11 +38,29 @@ mainApp.controller('autoTxtCtrl', ['$scope', '$timeout', function ($scope, $time
             if(greetNo > (greets.length - 1)) {
                greetNo = 0;
             }
-            $timeout(greet, 3000);
+            //$timeout(greet, 3000);
+            blinkCursor();
          }
          else {
             ind++;
             $timeout(typeLine, 200);
+         }
+      };
+
+      var blinked = 0;
+      var blinkCursor = function () {
+         blinked++;
+         if(blinked % 2 == 0) {
+            $scope.autoText = line;
+         } else {
+            $scope.autoText = line + '_';
+         }
+
+         if(blinked == 8) {
+            blinked = 0;
+            $timeout(greet, 500);;
+         } else {            
+            $timeout(blinkCursor, 500);
          }
       };
 
