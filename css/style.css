@@ -290,30 +290,31 @@ footer {
 	.navbar-default .navbar-nav>.active>a:hover {
 		background: rgba(0, 115, 253, 0.55);
 		color: #FFF;
-	}
+	}	
+}
 
-	/*In mobile devices stars will keep scrolling automatically*/
+/*********************************************************************************/
+/*In mobile devices stars will keep scrolling automatically*/
 	.liveSky {
 		background: url("../images/starry.png") 0px 0px repeat;
-    		-webkit-animation-duration: 10000s; 
-    		animation-duration: 10000s;
-    		/*animation-direction: alternate;*/
-    		animation-timing-function: linear;
-    		/*-webkit-animation-fill-mode: both; 
-	    	animation-fill-mode: both; */
-	    	animation-iteration-count:infinite; 
-	    	-webkit-animation-iteration-count:infinite;
-	    	-webkit-animation-name: moveStars; 
-    		animation-name: moveStars; 
+    	-webkit-animation-duration: 150000s; 
+    	animation-duration: 150000s;
+    	/*animation-direction: alternate;*/
+    	animation-timing-function: linear;
+    	/*-webkit-animation-fill-mode: both; 
+	    animation-fill-mode: both; */
+	    animation-iteration-count:infinite; 
+	    -webkit-animation-iteration-count:infinite;
+	    -webkit-animation-name: moveStars; 
+    	animation-name: moveStars; 
 	} 
 
 	@-webkit-keyframes moveStars { 
 	    0% {background-position: 0px 0px;} 
-	    100% {background-position: 0px 1000000px;} 
+	    100% {background-position: 0px 10000000px;} 
 	}
 
 	@keyframes moveStars { 
 	    0% {background-position: 0px 0px;} 
-	    100% {background-position: 0px 1000000px;} 
+	    100% {background-position: 0px 10000000px;} 
 	}
-}
