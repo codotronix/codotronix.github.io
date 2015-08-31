@@ -50,7 +50,7 @@
 		},
 		{
 			"name"		: "Brick Breaker",
-			"desc"		: "Simple brick breaker game that runs in any website browser",
+			"desc"		: "Simple brick breaker game that runs in any browser",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
