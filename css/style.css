@@ -252,7 +252,7 @@ footer {
 	.navbar-nav>li>a {
 		margin-left: 5px;
     	background-color: rgba(36, 131, 255, .2);
-    	border-radius: 50%;
+    	/*border-radius: 50%;*/
 	}
 
 	.mainMenu li,
