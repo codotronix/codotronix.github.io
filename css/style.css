@@ -117,8 +117,8 @@ label {
 
 .resizeMode .tile .tileInnerContainer,
 .movementMode .tile .tileInnerContainer {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-animation-iteration-count: infinite;
@@ -126,8 +126,8 @@ label {
 }
 
 .resizeMode .tile .tileInnerContainer {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+    -webkit-animation-name: customPulse;
+    animation-name: customPulse;
 }
 
 .movementMode .tile .tileInnerContainer {
@@ -311,48 +311,62 @@ label {
 /************* Animation Keyframes ******************/
 
 @-webkit-keyframes customShake {
+/*
   from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+*/
+
+  25% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
 
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    
+   75% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
   }
 }
 
 @keyframes customShake {
+  /*
   from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+*/
+
+   25% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
 
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    
+   75% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
   }
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes customPulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(.95, .95, .95);
+    transform: scale3d(.95, .95, .95);
   }
 
   to {
@@ -361,15 +375,15 @@ label {
   }
 }
 
-@keyframes pulse {
+@keyframes customPulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(.95, .95, .95);
+    transform: scale3d(.95, .95, .95);
   }
 
   to {
