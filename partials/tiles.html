@@ -1,0 +1,45 @@
+<div class="tiles-container" ng-class="page_Width_Class"> 
+    <div id={{tile.id}} ng-mousedown="dragStart($event, tile.id)" 
+                        ng-mouseup="dragEnd($event)" 
+                        ng-mouseleave="dragEnd($event)" 
+                        ng-mousemove="dragMove($event)" 
+                        ng-touchstart="dragStart($event, tile.id)" 
+                        ng-touchend="dragEnd($event)" 
+                        ng-touchmove="dragMove($event)" 
+                        ng-repeat="tile in TM.tiles" 
+                        class="tile {{tile.size}}" 
+                        ng-class="{'shift-effect':(tile.id==sto.id), 'drag-effect':(tile.id==dto.id)}" 
+                        ng-attr-style="top:{{tile.top}}px; left:{{tile.left}}px; width:{{tile.width}}px; height:{{tile.height}}px;" 
+                        data-gridid="{{tile.gridId}}">
+         <a href="javascript:void(0)" ng-href="{{tile.link}}" target="_blank" 
+              ng-click="tileClicked($event, tile.link)" 
+              ng-touchstart="tileTouchStart($event)"
+              ng-touchend="tileTouchEnd($event, tile.link)"
+               class="tileInnerContainer" data-ng-attr-style="background:{{tile.bgColor}}">
+            
+            <!-- if iconType == "font" -->
+            <span ng-if="tile.iconType == 'font'" class="fontIcon {{tile.icon}}" data-ng-attr-style="font-size:{{tile.height / 2}}px; margin-top:{{tile.height / 8}}px;"></span>                                    
+            
+            <!-- if iconType == "img" -->
+            <img ng-if="tile.iconType == 'img'" ng-src="{{tile.imgUrl}}" class="fontImg"/>
+                                                      
+            <!-- if iconType == "live" -->
+            <span ng-if="tile.iconType == 'live'">
+                <tile-animator></tile-animator>    
+            </span>
+               
+            <label class="name">
+                {{tile.name}}
+            </label>
+            
+            <div class="tileMask" ng-click="nextSize(tile.id)" ng-touchstart="nextSize(tile.id)">
+<!--                <span class="resizeBtn fa fa-recycle" ng-attr-style="font-size:{{tile.height/2.5}}px;"></span>-->
+            </div>
+            
+         </a>
+    </div>
+    <!-- place the cleardiv -->
+    <div data-ng-attr-style="position:absolute; top:{{getClearSpaceDivPosition() + 50}}px; left: 10px; right: 10px; height: 80px;"></div>
+
+
+</div>
