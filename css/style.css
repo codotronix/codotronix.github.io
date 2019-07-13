@@ -244,6 +244,25 @@ label {
     padding: 7px;
 }
 
+/* TILE SPECIFIC STYLES */
+#knexsol .live{
+    padding: 30px;
+}
+#uma {
+    opacity: .9;
+}
+#uma .live {
+    padding: 10px 35px 60px 35px;
+}
+#knexsolnotes .live {
+    padding: 10px 25px 40px 25px;
+} 
+#jumblefixer .live {
+    padding: 0 25px 50px 25px;
+} 
+.tile .liveTxt {
+    font-size: 16px;
+}
 /*********** Media Queries ****************/
 
 @media (min-width: 768px) {

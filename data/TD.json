@@ -1,6 +1,6 @@
 {
     "tileOrder": 
-    ["linkedIn", "stackoverflow", "galaxy", "tileOfTime", "weatherNow", "myPictures", "barickTilefy", "asteroidattack", "miniPuzzle", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "github", "bengalirecipes", "reactTaskMan", "txtTile"],
+    ["linkedIn", "stackoverflow", "galaxy", "tileOfTime", "knexsol", "uma", "myPictures", "knexsolnotes", "jumblefixer", "barickTilefy", "asteroidattack", "miniPuzzle", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "github", "bengalirecipes", "reactTaskMan", "txtTile"],
     
     "tiles": {            
             "galaxy": {
@@ -32,12 +32,23 @@
             "myPictures": {
                 "id": "myPictures",
                 "name": "My Pictures",
-                "size": "big",
+                "size": "medium",
                 "iconType": "live",
                 "liveImgUrls": ["img/myPictures/1.jpg", "img/myPictures/3.jpg", "img/myPictures/4.jpg"],
-                "liveTxts": ["Welcome to my Website", "Follow me at Twitter @codotronix"],
+                "liveTxts": ["Connect @ linkedin", "Follow @ twitter"],
                 "fontColor": "ivory",
                 "bgColor": "rgba(255,255,255,.2)"
+            },
+            "uma": {
+                "id": "uma",
+                "name": "UMA",
+                "size": "medium",
+                "iconType": "live",
+                "liveImgUrls": ["img/uma/uma-logo-big.jpg"],
+                "liveTxts": ["Utsav Melbourne Association", "Bengali Festivals in Melbourne", "A home far from home"],
+                "fontColor": "#f00",
+                "bgColor": "#fff",
+                "link": "http://utsavmelbourneassociation.org/"
             },
             "txtTile": {
                 "id": "txtTile",
@@ -90,7 +101,7 @@
                 "iconType": "font",
                 "icon": "fa fa-facebook-square",
                 "bgColor":"rgba(59, 89, 152, 0.7)",
-                "link":"http://facebook.com/codotronix"
+                "link":"https://www.facebook.com/bluehimachal/"
             },
             "offersplus": {
                 "id": "offersplus",
@@ -99,6 +110,27 @@
                 "iconType": "live",
                 "liveImgUrls": ["img/offersplus/offersplus.in.png"],
                 "link": "http://offersplus.in"
+            },
+            "knexsolnotes": {
+                "id": "knexsolnotes",
+                "name": "Knexsol Notes",
+                "size": "medium",
+                "iconType": "live",
+                "liveImgUrls": ["img/knexsol-notes/logo-512x.png"],
+                "liveTxts": ["An android app", "for taking notes", "simple yet efficient"],
+                "bgColor": "rgba(0, 0, 0, .5)",
+                "link": "https://play.google.com/store/apps/details?id=in.barick.knexsolnote&hl=en"
+            },
+            "jumblefixer": {
+                "id": "jumblefixer",
+                "name": "Jumble Fixer",
+                "size": "medium",
+                "iconType": "live",
+                "liveImgUrls": ["img/jumble-fixer/logo-512x.png"],
+                "liveTxts": ["A puzzle game", "for android devices"],
+                "bgColor": "#fff",
+                "fontColor": "#00f",
+                "link": "https://play.google.com/store/apps/details?id=in.barick.jumblefixer1"
             },
             "miniPuzzle": {
                 "id": "miniPuzzle",
@@ -126,6 +158,16 @@
                 "liveImgUrls": ["img/tankgular/tankgular.png"],
                 "bgColor": "rgba(255,255,255,.2)",
                 "link": "http://codotronix.github.io/Tankgular/"
+            },
+            "knexsol": {
+                "id": "knexsol",
+                "name": "Knexsol",
+                "size": "rectangle",
+                "iconType": "live",
+                "liveImgUrls": ["img/knexsol/knexsol-logo-with-soft-shadow-200v.png"],
+                "bgColor": "#009bff",
+                "link": "https://www.knexsol.com/p/home.html",
+                "classes": "some-class"
             },
             "barickTilefy": {
                 "id": "barickTilefy",
@@ -178,14 +220,6 @@
                 "size": "rectangle",
                 "iconType": "plugin",
                 "bgColor": "rgba(7, 15, 245, 0.44)"
-            },
-            "weatherNow": {
-                "id": "weatherNow",
-                "name": "Weather Now",
-                "size": "rectangle",
-                "iconType": "plugin",
-                "bgColor": "rgba(228, 255, 0, 0.45)",
-                "link": "http://weather.yahoo.com"
             }
     }
 }
