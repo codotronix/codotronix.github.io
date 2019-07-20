@@ -1,6 +1,6 @@
 {
     "tileOrder": 
-    ["linkedIn", "stackoverflow", "galaxy", "tileOfTime", "knexsol", "uma", "myPictures", "knexsolnotes", "jumblefixer", "barickTilefy", "asteroidattack", "miniPuzzle", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "github", "bengalirecipes", "reactTaskMan", "txtTile"],
+    ["linkedIn", "stackoverflow", "galaxy", "tileOfTime","avLEDvdo", "knexsol", "uma", "myPictures", "knexsolnotes", "jumblefixer", "barickTilefy", "cxgl", "bob", "asteroidattack", "miniPuzzle", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "github", "bengalirecipes", "reactTaskMan"],
     
     "tiles": {            
             "galaxy": {
@@ -50,14 +50,27 @@
                 "bgColor": "#fff",
                 "link": "http://utsavmelbourneassociation.org/"
             },
-            "txtTile": {
-                "id": "txtTile",
-                "name": "Hello Guest!",
+            "cxgl": {
+                "id": "cxgl",
+                "name": "CXGL",
                 "size": "rectangle",
                 "iconType": "live",
-                "liveTxts": ["Hi! I am Suman Barick and I love to Code", "I made this plugin \"barick-tilefy\"", "Like it? Star \"barick-tilefy\" repo on github", "I have made this plugin Open Source", "I'll soon make the documentation"],
-                "fontColor": "#E4F978",
-                "bgColor": "rgba(255,255,255,.3)"
+                "liveImgUrls": ["img/cxgl/cxgl3.png", "img/cxgl/cxgl5.png", "img/cxgl/cxgl6.png"],
+                "liveTxts": ["Codotronix Game Library", "Pure JS Library", "UI Agnostic"],
+                "fontColor": "#00f",
+                "bgColor": "#000",
+                "link": "http://barick.in/cxgl"
+            },
+            "bob": {
+                "id": "bob",
+                "name": "Beware of Boxes!!!",
+                "size": "rectangle",
+                "iconType": "live",
+                "liveImgUrls": ["img/bob/bob0.png", "img/bob/bob2.png"],
+                "liveTxts": ["Demo Game for CXGL"],
+                "fontColor": "#0ff",
+                "bgColor": "#000",
+                "link": "http://barick.in/bob/?enemy=10"
             },
             "bengalirecipes": {
                 "id": "bengalirecipes",
@@ -217,6 +230,13 @@
             "tileOfTime": {
                 "id": "tileOfTime",
                 "name": "Tile of Time",
+                "size": "rectangle",
+                "iconType": "plugin",
+                "bgColor": "rgba(7, 15, 245, 0.44)"
+            },
+            "avLEDvdo": {
+                "id": "avLEDvdo",
+                "name": "Voice COntrolled LEDs",
                 "size": "rectangle",
                 "iconType": "plugin",
                 "bgColor": "rgba(7, 15, 245, 0.44)"
