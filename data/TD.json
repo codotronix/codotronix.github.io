@@ -1,6 +1,6 @@
 {
     "tileOrder": 
-    ["linkedIn", "stackoverflow", "galaxy", "tileOfTime","avLEDvdo", "knexsol", "uma", "myPictures", "knexsolnotes", "jumblefixer", "barickTilefy", "cxgl", "bob", "asteroidattack", "miniPuzzle", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "github", "bengalirecipes", "reactTaskMan", "inkscapeTutVdo"],
+    ["cv", "linkedIn", "stackoverflow", "galaxy", "tileOfTime","avLEDvdo", "knexsol", "uma", "myPictures", "knexsolnotes", "jumblefixer", "barickTilefy", "cxgl", "bob", "asteroidattack", "miniPuzzle", "github", "facebook", "twitter", "codotronixBlog", "oneMall", "offersplus", "tankgular", "gogoltugo", "myBlog", "bengalirecipes", "reactTaskMan", "inkscapeTutVdo"],
     
     "tiles": {            
             "galaxy": {
@@ -116,6 +116,15 @@
                 "bgColor":"rgba(59, 89, 152, 0.7)",
                 "link":"https://www.facebook.com/bluehimachal/"
             },
+            "cv": {
+                "id": "cv",
+                "name": "CV",
+                "size": "small",
+                "iconType": "font",
+                "icon": "fa fa-user",
+                "bgColor":"rgba(9, 18, 189, 0.7)",
+                "link":"http://barick.in/cv"
+            },
             "offersplus": {
                 "id": "offersplus",
                 "name": "Offersplus.in",
@@ -221,7 +230,7 @@
             "twitter": {
                 "id": "twitter",
                 "name": "twitter",
-                "size": "small",
+                "size": "medium",
                 "iconType": "font",
                 "icon": "fa fa-twitter",
                 "bgColor": "rgba(64, 153, 255, 0.7)",
