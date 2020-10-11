@@ -1,90 +1,314 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Suman Barick - Personal Website with barick-tilefy</title>
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/hand.minified-1.3.7.js"></script>
-        <script src="js/barick-tilefy.min.js"></script>
-        <link rel="stylesheet" href="css/animate.css"/>
-        <link rel="stylesheet" href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/barick-tilify.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        
-    </head>
-    <body>        
-        
-        <div class="mask"></div>
-        
-        <!-- The Head Row -->
-        <div class="topPanel">
-           <label class="welcomeTxt">Welcome</label>
-            <div id="microProfile">
-                <label id="userName">Suman Barick</label>
-                <span class="desc">Coder. Learner. Dreamer</span>
-                <img id="profilePic" alt="profile picture of Suman Barick" src="profile/profilepic.jpg">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Barick - Portfolio</title>
+    <link rel="stylesheet" href="lib/css/materialize.min.css" />
+    <link rel="stylesheet" href="lib/fa/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <!-- THE TOP BANNER -->
+    <div class="banner">
+        <div class="ppnccontainer">
+            <div class="profile-pic">
+                <img src="suman-barick-254x.jpg" alt="The Face of Suman Barick" />
+            </div>
+
+            <div class="thering">
+                <a class="fb" href="https://www.facebook.com/liquidwhitelight/" target="_blank">
+                    <i class="fab fa-facebook ico"></i>
+                </a>
+                <a class="tw" href="https://twitter.com/codotronix" target="_blank">
+                    <i class="fab fa-twitter ico circle"></i>
+                </a>
+                <a class="ln" href="https://in.linkedin.com/in/sumanbarick" target="_blank">
+                    <i class="fab fa-linkedin-in ico circle"></i>
+                </a>
+                <a class="gh" href="https://github.com/codotronix/" target="_blank">
+                    <i class="fab fa-github ico"></i>
+                </a>
             </div>
         </div>
-        
-        <!-- The Tile Container -->
-        <div id="tilesContainer"></div>
-        
-        <!-- TASK BAR -->
-        <div id="taskBar">
-            <span id="startBtn">START</span>
-            <ul id="startMenu">
-                <li id="btn_toggleTileDnD" class="off">Tile Reposition <span class="toggleBtn"><span></span></span> </li>
-                <li id="btn_toggleTileResize" class="off">Tile Resize <span class="toggleBtn"><span></span></span> </li>
-                <li id="btn_ChangeWallpaper">Change Wallpaper</li>
-<!--
-                <li>Item 4</li>
-                <li>Item 5</li>
--->
+
+        <div class="name">Suman Barick</div>
+        <div class="whatido">UI Web and Hybrid App Developer</div>
+    </div>
+    <!-- END OF TOP BANNER -->
+
+    <div class="container main-container">
+
+        <!-- MY INTRO -->
+        <p class="flow-text">Hello and welcome, from a dreamer and developer who codes for both job and hobby. And doing
+            this for 'bout <span id="mycodingexp">8+</span> years now. So yeah, that's me. Scroll down to know more ...
+        </p>
+
+        <!-- Technology Section -->
+        <section class="info-sec">
+            <h1 class="z-depth-0">Technologies</h1>
+            <p class="flow-text">Here are some of the technolgies I have worked in</p>
+            <ul class="list-box">
+                <li class="z-depth-1">
+                    <i class="fab fa-html5 ico"></i>
+                    <span class="caption">HTML 5</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-css3-alt ico"></i>
+                    <span class="caption">CSS 3</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-js-square ico"></i>
+                    <span class="caption">Javascript</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-react ico"></i>
+                    <span class="caption">React JS</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-angular ico"></i>
+                    <span class="caption">Angular JS</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-node-js ico"></i>
+                    <span class="caption">Node JS</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fas fa-database ico"></i>
+                    <span class="caption">MongoDB</span>
+                </li>
+                <li class="z-depth-1">
+                    <i class="fab fa-python ico"></i>
+                    <span class="caption">Python</span>
+                </li>
             </ul>
-        </div>
-        
-        
-        <!-- The Wallpaper Selector -->        
-        <div id="wallpaperModal" class="itemSelector modal">
-            <h1 class="heading">Select Wallpaper</h1>
-            <ul class="imageSelector">
+        </section>
+
+        <!-- Companies Section -->
+        <section class="info-sec">
+            <h1 class="z-depth-0">Companies</h1>
+            <p class="flow-text">Here are the companies I have worked in</p>
+            <ul class="list">
                 <li>
-                    <img src="img/Wallpapers/aurora-borealis-1181004_1280.jpg"/>
+                    <img src="img/logos/infosys100h.png" alt="Infosys logo" />
                 </li>
                 <li>
-                    <img src="img/Wallpapers/chest-805006_1280.jpg"/>
+                    <img src="img/logos/cognizant100h..png" alt="Cognizant logo" />
                 </li>
                 <li>
-                    <img src="img/Wallpapers/dock-1030837_1280.jpg"/>
+                    <img src="img/logos/tcs100h.png" alt="TCS logo" />
                 </li>
                 <li>
-                    <img src="img/Wallpapers/lake-1031405_1280.jpg"/>
-                </li>
-                <li>
-                    <img src="img/Wallpapers/landscape-1260850_640.jpg"/>
-                </li>
-                <li>
-                    <img src="img/Wallpapers/ocean-waves-1082245_1280.jpg"/>
-                </li>
-                <li>
-                    <img src="img/Wallpapers/paradise-1110498_1280.jpg"/>
-                </li>
-                <li>
-                    <img src="img/Wallpapers/sunset-1226110_1280.jpg"/>
-                </li>
-                <li>
-                    <img src="img/Wallpapers/weed-912898_1280.jpg"/>
+                    <img src="img/logos/sapient100h.png" alt="Publicis Sapient logo" />
                 </li>
             </ul>
-            <div class="panel_Btns">
-                <span id="btn_ApplyWallpaper" class="btn">Apply</span>
-                <span id="" class="btn btn_Cancel">Cancel</span>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="info-sec">
+            <h1 class="z-depth-0">Projects</h1>
+            <p class="flow-text">Here are some of my personal projects.</p>
+
+
+            <h2><i class="fas fa-dot-circle ico"></i>Apps 'n' Games</h2>
+            <div class="row app-n-games cards-container">
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/knexsol-notes-logo-512x.png" alt="knexsol notes"/>
+                        <h3 class="title">Knexsol Notes</h3>
+                        <p class="description">
+                            A lightweight note taking app for Android made with Angular etc
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=in.barick.knexsolnote&hl=en" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-google-play"></i> &nbsp; Google Playstore
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/jumble-fixer-logo-512x.png" alt="jumble fixer"/>
+                        <h3 class="title">Jumble Fixer</h3>
+                        <p class="description">
+                            An image puzzle game for mobile / web made with HTML, CSS, JS etc.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=in.barick.jumblefixer1" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-google-play"></i> &nbsp; Google Playstore
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/mini-puzzle-square310x310Logo.scale-100.png" alt="mini puzzle"/>
+                        <h3 class="title">Mini Puzzle</h3>
+                        <p class="description">
+                            A pocket puzzle game for web / mobile made with HTML, CSS, JS etc.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=in.barick.cordova.minipuzzle" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-google-play"></i> &nbsp; Google Playstore
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/bob2.png" alt="beware of boxes"/>
+                        <h3 class="title">Beware of Boxes</h3>
+                        <p class="description">
+                            A demo game for my web based game development framework CXGL.
+                        </p>
+                        <a href="https://barick.in/bob/?enemy=20" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fas fa-gamepad"></i> &nbsp; Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/astattack.png" alt="asteroid attack"/>
+                        <h3 class="title">Asteroid Attack</h3>
+                        <p class="description">
+                            A web based space fighting game developed purely with html, css and js.
+                        </p>
+                        <a href="https://barick.in/Asteroid-Attack/play.html" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fas fa-gamepad"></i> &nbsp; Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/tankgular.png" alt="tangkgular"/>
+                        <h3 class="title">Tankgular</h3>
+                        <p class="description">
+                            A tank fighting game to test the performance of AngularJS 1.x.
+                        </p>
+                        <a href="https://barick.in/Tankgular/#/menu" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fas fa-gamepad"></i> &nbsp; Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/flipflap-simple-260x.png" alt="flip-flap"/>
+                        <h3 class="title">Flip / Flap</h3>
+                        <p class="description">
+                            A game of memorization and matching made with ReactJS etc.
+                        </p>
+                        <a href="https://barick.in/flip-flap/" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fas fa-gamepad"></i> &nbsp; Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/snake-n-snack-300x.png" alt="snake-n-snack"/>
+                        <h3 class="title">Snake-n-Snack</h3>
+                        <p class="description">
+                            A remake of the old snake game with ReactJS etc.
+                        </p>
+                        <a href="https://barick.in/snake-n-snack/" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fas fa-gamepad"></i> &nbsp; Play Game
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        
-        <script src="js/script.js"></script>
-    </body>
+
+
+            <h2><i class="fas fa-dot-circle ico"></i>Miscellaneous</h2>
+            <div class="row miscellaneous cards-container">
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/RepositionTiles.gif" alt="barick tilefy"/>
+                        <h3 class="title">Barick Tilefy</h3>
+                        <p class="description">
+                            A Windows 8.1 Metro Style Responsive Web Plugin
+                        </p>
+                        <a href="https://github.com/codotronix/barick-tilefy" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/knexsol-logo-with-soft-shadow-200v.png" alt="knexsol"/>
+                        <h3 class="title">Knexsol</h3>
+                        <p class="description">
+                            A website for online learning and examination.
+                        </p>
+                        <a href="https://www.knexsol.com/p/home.html" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/cxgl3.png" alt="cxgl"/>
+                        <h3 class="title">CXGL</h3>
+                        <p class="description">
+                            A javascript game library for making web based games.
+                        </p>
+                        <a href="https://barick.in/cxgl/" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/galaxy.png" alt="galaxy web"/>
+                        <h3 class="title">Galaxy Web</h3>
+                        <p class="description">
+                            A portfolio website with cool galaxy effect.
+                        </p>
+                        <a href="https://barick.in/galaxy/" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/fexplo-screen-2.png" alt="fexplo"/>
+                        <h3 class="title">Fexplo</h3>
+                        <p class="description">
+                            Simple Lightweight Cross Platform Folder Explorer
+                        </p>
+                        <a href="https://github.com/codotronix/fexplo" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 inner">
+                    <div class="custom-card z-depth-2">
+                        <img class="materialboxed" src="img/projects/pcr-2-430w.png" alt="pc remote"/>
+                        <h3 class="title">PCRemote</h3>
+                        <p class="description">
+                            An app to turn your mobile into a PC Remote Controller.
+                        </p>
+                        <a href="https://github.com/codotronix/pcr-mc" target="_blank" class="waves-effect waves-light btn-small blue accent-3 button">
+                            <i class="fab fa-internet-explorer"></i> &nbsp; Visit Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2020 | Suman Barick
+    </footer>
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    (function () {
+        ////// calculate my coding experience ///////
+        document.getElementById('mycodingexp').innerText = ((new Date()).getFullYear() - 2011) + '+'
+        //////////////////////////////////////////////
+
+        // Material Box
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, {});
+        });
+    })()
+</script>
+
 </html>
